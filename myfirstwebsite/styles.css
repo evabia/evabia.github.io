@@ -1,0 +1,209 @@
+body {
+    margin: 0px !important;
+    padding: 0px !important;
+    font-family: 'Inconsolata', courier;
+    background-image: url("assets/background.png");
+    color: #333333;
+}
+
+nav {
+    font-family: 'Merriweather Sans', sans-serif;
+    position: sticky;
+    display: flex;
+    justify-content: flex-end;
+    top: 0px;
+    width: 100%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-color: #333333;
+}
+
+#logo {
+    position: fixed;
+    width: 28px;
+    height: 28px;
+    left: 11%;
+    top: 7px;
+}
+
+#menu ul {
+    margin: 0;
+    position: relative;
+    right: 10%;
+    padding: 3px;
+    display: table;
+    text-align: center;
+}
+
+#menu li {
+    display: table-cell;
+    position: relative;
+}
+
+li a {
+    font-weight: 600;
+    text-decoration: underline;
+    letter-spacing: 0.03em;
+    color: #ff0099;
+    font-size: 13px;
+    display: inline-block;
+    padding: 3px 7px;
+    position: relative;
+    overflow: hidden;
+}
+/*
+li a:after {
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 1.5px;
+    left: 50%;
+    position: absolute;
+    background: #ff0099;
+    transition: width 0.1s ease 0s, left 0.1s ease 0s;
+    width: 0;
+}
+
+li a:hover:after {
+    width: 100%;
+    left: 0;
+}
+*/
+li a:hover {
+    cursor: pointer;
+    color:#d992bd;
+}
+
+.pink {
+    color: #ff0099;
+}
+
+section {
+    width: 80%;
+    padding-right: 10%;
+    padding-left: 10%;
+    margin-bottom: 30px;
+}
+
+article {
+    width: 100%;
+    margin: 0;
+}
+
+h1 {
+    text-align: left;
+}
+
+h2 {
+    text-align: center;
+}
+
+h3 {
+    text-align: left;
+}
+
+hr {
+    border-top: 2px dashed;
+    width: 10%;
+}
+
+p {
+    text-align: justify;
+    line-height: 1.3em;
+}
+
+p > a{
+    text-decoration: none;
+    color: #ff0099;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+#TechWiki {
+    padding-top: 60px;
+}
+
+@media screen and (min-width: 1201px) {
+    h1 {
+        font-size: 72px;
+    }
+
+    h2 {
+        font-size: 60px;
+    }
+
+    h3 {
+        font-size: 48px;
+    }
+
+    h4 {
+        font-size: 36px;
+    }
+
+    p {
+        font-size: 24px;
+        /*line-height: 28px;*/
+    }
+
+    hr {
+        margin-top: 84px;
+        margin-bottom: 24px;
+    }
+}
+
+@media screen and (min-width: 801px) and (max-width: 1200px) {
+    h1 {
+        font-size: 6vw;
+    }
+
+    h2 {
+        font-size: 5vw;
+    }
+
+    h3 {
+        font-size: 4vw;
+    }
+
+    h4 {
+        font-size: 3vw;
+    }
+
+    p {
+        font-size: 2vw;
+        /*line-height: 2.2vw;*/
+    }
+
+    hr {
+        margin-top: 7vw;
+        margin-bottom: 1vw;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    h1 {
+        font-size: 48px;
+    }
+
+    h2 {
+        font-size: 40px;
+    }
+
+    h3 {
+        font-size: 32px;
+    }
+
+    h4 {
+        font-size: 24px;
+    }
+
+    p {
+        font-size: 16px;
+        /*line-height: 18px;*/
+    }
+
+    hr {
+        margin-top: 56px;
+        margin-bottom: -4px;
+    }
+}
